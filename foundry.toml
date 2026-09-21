@@ -1,0 +1,20 @@
+[profile.default]
+src = "src"
+test = "test"
+out = "out"
+libs = ["lib"]
+solc_version = "0.8.26"
+evm_version = "cancun"
+optimizer = true
+optimizer_runs = 200
+bytecode_hash = "none"
+ffi = false
+offline = true
+auto_detect_remappings = false
+
+[fuzz]
+runs = 512
+seed = "0x5eed"
+
+[fmt]
+ignore = ["lib/**"]
